@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KOTLINWORKSPACE</string>
+    <string name="wallpaper">Happy Birthday</string>
+    <string name="happy_birthday_greeting">Happy Birthday Ivan!!</string>
+    <string name="background_wallpaper">background_wallpaper</string>
+    <string name="roll_action">ROLL</string>
+</resources>

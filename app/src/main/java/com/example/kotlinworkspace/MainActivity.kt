@@ -2,12 +2,30 @@ package com.example.kotlinworkspace
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import kotlin.math.log
+
+private const val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity() {
+
+    //testing the log messages
+    /*fun loggingDivision(num: Int, den: Int) {
+        var denReassign = den
+        repeat(5) {
+            Log.v(TAG, "${num / denReassign}")
+            denReassign--
+        }
+    }*/
+
+    fun logging() {
+        Log.v(TAG, "Hello World!!")
+        Log.e(TAG, "THIS IS AN ERROR")
+    }
 
     class Dice(private val diceSides: Int) {
         fun rollDice(): Int {
@@ -52,6 +70,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //my code
         startDiceRoll()
+        logging()
+        //loggingDivision(60, 4)
 
     }
 }
